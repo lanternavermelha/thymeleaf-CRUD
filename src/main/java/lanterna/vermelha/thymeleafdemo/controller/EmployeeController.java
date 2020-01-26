@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import lanterna.vermelha.thymeleafdemo.model.Employee;
+import lanterna.vermelha.thymeleafdemo.entity.Employee;
 
 @Controller
 @RequestMapping("/employees")
@@ -25,6 +25,7 @@ public class EmployeeController {
 		Employee empl1 = new Employee(1,"Filipe", "Figueira", "f_figueira@hotmail.com");
 		Employee empl2 = new Employee(2,"Silvia", "Louro", "silouro@rtp.pt");
 		Employee empl3 = new Employee(3,"Macacas", "Malucas", "macacas_malucas@hotmail.com");
+		
 		//create the list
 		theEmployees  = new ArrayList<>();
 		
